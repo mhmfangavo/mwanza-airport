@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mwanza Community Survey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            background-image: url('https://lh3.googleusercontent.com/gps-cs-s/AC9h4npO4JCn0KIXOohdnppWpMaiq8OHNW1ONbmm38ZLFed1NrTl1o-bgLZhD6W3qJ4Pvrp7Op_pSX1ms6yhRLMU56SAngTE_Ch0KYRJiMYYE9C9h-hUSzQFP4mXY0VcbwuOmbugb2Kv=s680-w680-h510-rw');
+            background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+            gap: 30px;
+        }
+        
+        .info-section {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .info-section h2 {
+            color: #1a73e8;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8f0fe;
+        }
+        
+        .info-section p {
+            margin-bottom: 15px;
+        }
+        
+        .survey-options {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .survey-options h2 {
+            color: #1a73e8;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .language-option {
+            width: 100%;
+            max-width: 350px;
+            margin: 15px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .language-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-color: #1a73e8;
+        }
+        
+        .language-option h3 {
+            color: #1a73e8;
+            margin-bottom: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #1a73e8;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        
+        .btn:hover {
+            background: #0d47a1;
+            transform: scale(1.05);
+        }
+        
+        .qrcode-section {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin: 40px 0;
+        }
+        
+        .qrcode-section h2 {
+            color: #1a73e8;
+            margin-bottom: 20px;
+        }
+        
+        .qrcode-container {
+            display: inline-block;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .instructions {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        @media (max-width: 768px) {
+            .content-section {
+                flex-direction: column;
+            }
+            
+            header h1 {
+                font-size: 3rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <h1></h1><br />
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+            <h2>Passenger Satisfaction Survey/Dodoso La Urithishwaji Wa Wateja Mwanza Airport (October 2025)</h2>
+            
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="content-section">
+            <div class="info-section">
+                <h2>Passenger Satisfaction Survey/Dodoso La Urithishwaji Wa Wateja Mwanza Airport (October 2025)</h2>
+                <p><b>Dear Passenger</b>,</br>
+Your feedback is important to help us improve our services. Please take a few minutes to fill out this questionnaire.</p>
+                <p><b>Mpendwa Abiria</b>,</br>
+Maoni yako yatatusaidia kutathmini utendaji wetu kwa ujumla na kubaini maeneo yanayihitaji maboresho. Tafadhali tumia dakika chache kujaza dodoso hili.</p>
+                <p></p>
+            </div>
+            
+            <div class="survey-options">
+                <h2>Take the Survey</h2>
+                <p>Choose your preferred language:</p>
+                
+                <div class="language-option">
+                    <h3>English Survey</h3>
+                    <p>Complete the survey in English</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQMCIizXnk-LJL1OI-8j2aVWatjvYdWOBAtwyEb344haYseg/viewform?usp=dialog" class="btn" id="english-survey">Take Survey (English)</a>
+                </div>
+                
+                <div class="language-option">
+                    <h3>Swahili Survey</h3>
+                    <p>Complete the survey in Swahili</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegaMcofn-88d6p2TeZBvh1Rlco_4rTgnFml4em8vDyfs2vKQ/viewform?usp=header" class="btn" id="swahili-survey">Jaza Dodoso (Kiswahili)</a>
+                </div>
+            </div>
+        </section>
+        
+       <!--
+       <section class="qrcode-section">
+            <h2>Scan to Access This Page</h2>
+            <div class="qrcode-container">
+                <!-- QR Code will be generated here -->
+               <!--
+               <canvas id="qrcode"></canvas>
+            </div>
+            <p class="instructions">Scan this QR code with your smartphone camera to quickly access this landing page.</p>
+        </section> -->
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>mwanza@airports.go.tz &copy; 2025 | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>
+    <script>
+        // Generate QR Code
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get current page URL
+            const currentUrl = window.location.href;
+            
+            // Generate QR Code
+            QRCode.toCanvas(document.getElementById('qrcode'), currentUrl, {
+                width: 200,
+                height: 200,
+                colorDark: "#1a73e8",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.H
+            }, function(error) {
+                if (error) console.error(error);
+            });
+            
+            // Replace these with your actual Google Form URLs
+            const englishFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeQMCIizXnk-LJL1OI-8j2aVWatjvYdWOBAtwyEb344haYseg/viewform?usp=dialog";
+            const swahiliFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSegaMcofn-88d6p2TeZBvh1Rlco_4rTgnFml4em8vDyfs2vKQ/viewform?usp=header";
+            
+            // Set form links
+            document.getElementById('english-survey').href = englishFormUrl;
+            document.getElementById('swahili-survey').href = swahiliFormUrl;
+        });
+    </script>
+</body>
+</html>
